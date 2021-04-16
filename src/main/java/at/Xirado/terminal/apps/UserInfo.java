@@ -27,13 +27,14 @@ public class UserInfo extends ShellCommand
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("user-agent", USER_AGENT);
-            conn.setRequestProperty("authorization", "Bot Njk0MjU5MDA4OTY5NzY5MDY3.XoJBFg.vtpd47iVqHAevtaZnAukwfCeR2M");
+            conn.setRequestProperty("authorization", "Bot "+Main.jsonConfig.getString("token"));
 
 
             var bufferedReader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             StringBuilder result = new StringBuilder();
             String x = IOUtils.toString(bufferedReader);
             JSON json = JSON.parse(x);
+            if(json == null) return;
             String id = json.getString("id");
             String username = json.getString("username");
             String avatarhash = json.getString("avatar");

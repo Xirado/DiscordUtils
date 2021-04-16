@@ -1,12 +1,14 @@
 package at.Xirado.terminal;
 
 import at.Xirado.terminal.Utils.FileLoader;
+import at.Xirado.terminal.Utils.JSON;
 import at.Xirado.terminal.apps.*;
 import at.Xirado.terminal.events.CommandCompletionListener;
 import at.Xirado.terminal.events.EventHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class Main
@@ -19,6 +21,7 @@ public class Main
         return shell;
     }
     public static EventHandler eventHandler;
+    public static JSON jsonConfig = null;
 
     public static void main(String[] args)
     {
@@ -27,7 +30,6 @@ public class Main
         shell = new Shell();
         shell.startShell(() ->
         {
-            ApplicationLoader.loadApp("nano", new Nano());
             ApplicationLoader.loadApp("var", new Variable());
             ApplicationLoader.loadApp("echo", new Echo());
             ApplicationLoader.loadApp("hook", new DiscordWebhook());
@@ -44,6 +46,7 @@ public class Main
                 }
                 System.exit(0);
             }
+            jsonConfig = JSON.parse(new File("DiscordUtil.json"));
         });
     }
 
