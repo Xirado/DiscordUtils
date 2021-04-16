@@ -1,0 +1,6 @@
+{
+  "credentials": {
+    "token" : "<Discord Bot Token>",
+    "webhookurl" : "<Discord Webhook URL>"
+  }
+}
