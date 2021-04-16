@@ -44,7 +44,7 @@ public class Shell
     public final String WELCOME = new AttributedStringBuilder().style(AttributedStyle.DEFAULT.foreground(0x3E, 0xB4, 0x89))
             .append(LOGO)
             .append("\n\n"+centerStringToLogo("DiscordUtil 1.0 by Xirado"))
-            .append("\n"+centerStringToLogo("https://github.com/Xirado/DiscordUtil"))
+            .append("\n"+centerStringToLogo("https://github.com/Xirado/DiscordUtils"))
             .style(AttributedStyle.DEFAULT)
             .append("\n\n\nUse \"help\" or \"?\" for a list of commands\n")
             .toAnsi();
