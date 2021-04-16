@@ -1,7 +1,7 @@
 package at.Xirado.terminal;
 
-import at.Xirado.terminal.Utils.FileLoader;
-import at.Xirado.terminal.Utils.JSON;
+import at.Xirado.terminal.utils.FileLoader;
+import at.Xirado.terminal.utils.JSON;
 import at.Xirado.terminal.apps.*;
 import at.Xirado.terminal.events.CommandCompletionListener;
 import at.Xirado.terminal.events.EventHandler;

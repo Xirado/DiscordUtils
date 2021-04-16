@@ -2,7 +2,7 @@ package at.Xirado.terminal.apps;
 
 import at.Xirado.terminal.Main;
 import at.Xirado.terminal.ShellCommand;
-import at.Xirado.terminal.Utils.JSON;
+import at.Xirado.terminal.utils.JSON;
 import org.apache.commons.io.IOUtils;
 import org.jline.reader.LineReader;
 import org.jline.terminal.Terminal;
@@ -11,8 +11,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
 
 public class UserInfo extends ShellCommand
 {

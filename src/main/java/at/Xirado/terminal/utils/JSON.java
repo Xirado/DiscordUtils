@@ -1,4 +1,4 @@
-package at.Xirado.terminal.Utils;
+package at.Xirado.terminal.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

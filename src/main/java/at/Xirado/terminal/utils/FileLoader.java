@@ -1,15 +1,11 @@
-package at.Xirado.terminal.Utils;
+package at.Xirado.terminal.utils;
 
 import org.apache.commons.io.IOUtils;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.CopyOption;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class FileLoader
 {
